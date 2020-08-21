@@ -1,9 +1,31 @@
-.contact-form{
-   font-size: 25px;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+*{
+    font-family: 'Lobter',cursive;
+    font-weight: 100;
 }
-    
-.contact-form__h2{
-    color: blue;
-    font-size: 2em;    
+
+div{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background:yellow;
+}
+
+.caja1{
+    background-color: orange;
+}
+
+.caja2{
+    background-color: yellow;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.caja3{
+    background-color: green;
+    position: relative;
+}
+
+.caja4{
+    background-color: red;
 }
