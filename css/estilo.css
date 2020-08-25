@@ -1,47 +1,19 @@
 *{
     font-family: 'Lobter',cursive;
     font-weight: 100;
-}
-
-div{
-    display: block;
-    background:green;
-    position: absolute;
-}
-
-div div{
-    height: 100px;
-    width: 100px;
-    background:yellow;
-}
-
-.contenedor{
-    border: 4px solid red;
-    margin: 50px auto;
-    height: 450px;
-    width: 450px;
+    font-size: 20px;
 }
 
 .caja1{
-    top: 0;
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 25px;
+    
+    transition: all 1s;
 }
 
-.caja2{
-    right: 0;
-}
-
-.caja3{
-    bottom: 0;
-    right: 0;
-}
-
-.caja4{
-    bottom: 0;
-}
-.caja5{
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+.caja1:active{
+    background: blue;
+    width: 300px;
 }
