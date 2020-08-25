@@ -7,13 +7,9 @@
 .caja1{
     width: 200px;
     height: 200px;
-    background: red;
     margin: 25px;
-    
-    transition: all 1s;
+    border: 2px solid #f00;
+    background-color: #f00;
+    cursor: grabbing;
 }
 
-.caja1:active{
-    background: blue;
-    width: 300px;
-}
