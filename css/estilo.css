@@ -4,81 +4,23 @@
     font-size: 20px;
 }
 
-.responsive_ul{
-    display: none;
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 
-.nav{
-    background-color: slateblue;
-}
 
-.nav_li{
-    display: inline-block;
-    padding: 12px;
-    color: #fff;
-}
-
-.nav_li:hover > a{
-    color: #bbb;
-}
-
-.nav_li:hover{
-    color: #bbb;
-}
-
-.nav_li a{
+.flex-item{
+    background-color:#248;
     color:#fff;
-    text-decoration: none;
+    margin: 5px;
+    height: 120px;    
+    min-width: 120px;
+    text-align: center;
 }
 
-.nav_li i{
-box-sizing: border-box;
-text-align:right;
-margin-left: 5px;    
-}
-
-.nav_responsive_button{
-    float: right;
-    font-size: 25px;
-    padding: 6px 20px;
-}
-
-@media only screen and (max-width: 500px)
-{
-    .nav_ul{
-        display: none;
-    }
-
-    .nav{
-        height: 37px;
-        width: 100%;
-        background-color: #69c;
-    }
-
-    
-    .responsive_ul{
-        display: block;
-        position: absolute;
-        width: 100%;
-        background-color: #7af;
-        height: 100%;
-        margin-top: 37px;
-    }
-
-    .nav_responsive_li{
-        width: 100%;
-    }
-
-    .nav_responsive_li i{
-        box-sizing: border-box;
-        text-align: center;
-        margin-right: 5px;
-        width: 30px;
-        color: #016;
-    }
-
-    .nav_responsive_li a{
-        color: #016;
-        text-decoration: none;
-    }
+._5{
+  background:green;
+  align-self: flex-end;  
 }
