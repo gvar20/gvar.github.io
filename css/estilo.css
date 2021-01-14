@@ -9,13 +9,12 @@ body{
 }
 
 .grid-container{
-    background: blue;
-
+    display: inline-block;
+    
+    width: 500px;
+    height: 500px;
+    background-image: url(https://i.pinimg.com/originals/84/a5/c9/84a5c91d72e1e1c52931c987a0ba42af.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    filter: sepia(10);
 }
-
-@media screen and (min-width:500px) and (max-width:600px){
-    .grid-container{
-        background:green;
-    }
-}
-
