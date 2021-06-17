@@ -7,17 +7,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Algebra y Geometría</title>
   </head>
-  <body class="d-flex vh-100">
+  
+  <body class="d-flex vh-100 align-items-start flex-column bd-highlight mb-3">  
       <div class="card m-auto">
         <div class="card-header">
           Números Primos
         </div>
-        <div class="card-body">
+        <div class="card-body ">
             <div class="input-group mb-3">
               <span class="input-group-text" id="basic-addon1">Ingrese un número natural mayor que 1</span>
-              <input type="text" class="form-control" aria-describedby="basic-addon1">
-              <button class="btn btn-warning">
-                Vamos!
+              <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="n" id="txt_numero">
+              <button class="btn btn-warning" id="boton_resolver" onclick="dar_click()">
+                Resolver
               </button>
             </div>            
             <div class="row">
@@ -25,7 +26,7 @@
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title">¿n es un número primo?</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text " id="card_1">............................</p>
                   </div>
                 </div>
               </div>
@@ -33,15 +34,16 @@
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title">Números primos menores a n</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text" id="card_2">............................</p>
                   </div>
                 </div>
-              </div>
+              </div>                   
             </div>
         </div>  
     </div>
 
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/solucion.js"></script>
   </body>
 </html>
