@@ -49,7 +49,7 @@ function numeros_primos_menores(numero){
     var numeros = [];
     var indice = 0;
     var contador = 0;
-    for(var x=2; x<=numero;x++)
+    for(var x=2; x<numero;x++)
     {
         for(var y=1; y<=x; y++)
         {
