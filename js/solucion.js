@@ -23,7 +23,11 @@ function dar_click(){
         
     }
     respuesta1.innerHTML = numero + " " + texto;
-    numeros_menores.forEach(element => respuesta2.innerHTML+=(element)+" ");
+    if(numero==2){
+        respuesta2.innerHTML=("No hay números primos menores a 2")
+    }else{
+        numeros_menores.forEach(element => respuesta2.innerHTML+=(element)+" ");
+    }    
 };
 
 function es_numero_primo(numero){
