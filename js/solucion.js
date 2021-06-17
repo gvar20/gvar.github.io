@@ -12,14 +12,14 @@ function dar_click(){
     var texto;
     if(numero<=1 || numero==""){
         alert("Los datos ingresados son incorrectos");
-    }else{
+    }else{        
+        var numeros_menores = numeros_primos_menores(numero);
         validar = es_numero_primo(numero);
         if (validar==true || (numero==2)) {
             texto = "Es un número primo"
         }else{
             texto = "No es un número primo"
         }        
-        var numeros_menores = numeros_primos_menores(numero);
         
     }
     respuesta1.innerHTML = numero + " " + texto;
@@ -30,23 +30,19 @@ function dar_click(){
     }    
 };
 
-function es_numero_primo(numero){
-    var validar;
-    var contador=0;
-    var numero_raiz;
-    numero_raiz = Math.trunc(Math.sqrt(numero));
-    var array = numeros_primos_menores(numero_raiz);
-    for (let x = 0; x < array.length; x++) {
-        if(numero % array[x] == 0){
-            contador++;
-        }        
+function es_numero_primo(numero){ 
+    if(numero!=2 && numero%2==0){
+        return false;
+    }else{        
+        var limite = Math.floor(Math.sqrt(numero))+1;
+        for (var x = 2; x <= limite; x++) {
+            if(numero%x==0) {
+                return false;
+            }         
+        }           
+        return true;
     }
-    if(contador==0){
-        validar = true;
-    }else{
-        validar = false;
-    }
-    return validar;
+        
 }
 
 function numeros_primos_menores(numero){
