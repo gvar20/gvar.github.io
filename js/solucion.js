@@ -20,7 +20,6 @@ function dar_click(){
         }else{
             texto = "No es un número primo"
         }        
-        
     }
     respuesta1.innerHTML = numero + " " + texto;
     if(numero==2){
